@@ -1,0 +1,30 @@
+// UTILS
+@import './utils/vars';
+@import './utils/rezoing';
+@import './utils/mixins';
+@import './utils/generalSettings';
+@import './utils/placeholders';
+
+// HEADER
+@import './components/header/header';
+
+// MAIN
+@import './components/main/hero';
+@import './components/main/qualities';
+@import './components/main/about';
+@import './components/main/team';
+@import './components/main/regularCustomers';
+
+//FOOTER
+@import './components/footer/addresses';
+@import './components/footer/socialLinks';
+@import './components/footer/form';
+
+// MODAL
+@import './components/modal/backdrop';
+@import './components/modal/window';
+@import './components/modal/forms';
+
+// PORTFOLIO
+@import './components//portfolio/choiceFilter';
+@import './components//portfolio/product';

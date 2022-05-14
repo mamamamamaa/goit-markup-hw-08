@@ -1,0 +1,10 @@
+@mixin flexPosition($type: flex, $main-axis: center, $cross-axis: center) {
+    display: $type;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}
+
+@mixin conteiner($size) {
+    padding-top: $size;
+    padding-bottom: $size;
+}

@@ -1,0 +1,42 @@
+.about{
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
+
+.about__list {
+    @include flexPosition();
+}
+
+.about__item {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+.about__describing-box {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+
+    color: $contrast-color;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    /* transform: translateY(-70px); */
+}
+
+.about__describing-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
