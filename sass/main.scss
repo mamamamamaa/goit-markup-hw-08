@@ -2,11 +2,12 @@
 @import './utils/vars';
 @import './utils/rezoing';
 @import './utils/mixins';
-@import './utils/generalSettings';
 @import './utils/placeholders';
+@import './utils/generalSettings';
 
 // HEADER
 @import './components/header/header';
+@import './components/header/modal-menu';
 
 // MAIN
 @import './components/main/hero';

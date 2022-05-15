@@ -10,17 +10,14 @@
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width:320px) {
-        width: 290px;
-    }
     @media screen and (min-width:480px) {
-        width: 450px;
+        width: 480px;
     }
     @media screen and (min-width:768px) {
-        width: 720px;
+        width: 768px;
     }
     @media screen and (min-width:1200px) {
-        width: 1170px;
+        width: 1200px;
     }
 }
 
@@ -37,7 +34,8 @@
 .team__item,
 .header__address-item,
 .filter__item,
-.product__item {
+.product__item,
+.header-social__item {
     list-style-type: none;
 }
 
