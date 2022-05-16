@@ -1,5 +1,6 @@
 .pic {
     width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -28,13 +29,16 @@
     }
 }
 
+.menu__item,
 .header__item,
 .qualities__item,
 .about__item,
 .team__item,
+.menu__address-item,
 .header__address-item,
 .filter__item,
 .product__item,
+.menu-social__item,
 .header-social__item {
     list-style-type: none;
 }

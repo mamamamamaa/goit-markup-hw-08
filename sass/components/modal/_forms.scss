@@ -84,7 +84,10 @@
 .modal__header {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    @media screen and (min-width:1200px) {
+        line-height: 1.15;
+    }
     text-align: center;
     letter-spacing: 0.03em;
 
