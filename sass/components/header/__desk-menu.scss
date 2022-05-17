@@ -80,8 +80,13 @@
     align-items: center;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $paragraph-color;
@@ -93,6 +98,7 @@
 
 .header__icons {
     display: block;
+    width: 16px;
     max-height: 80px;
     margin-right: 10px;
     fill: #757575;

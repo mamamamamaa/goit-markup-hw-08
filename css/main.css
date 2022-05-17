@@ -108,11 +108,18 @@ textarea {
 
 .main-section__header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .main-section__header {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .header {
@@ -146,8 +153,8 @@ textarea {
 .header__logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
   letter-spacing: 0.03em;
   color: #212121;
@@ -156,11 +163,17 @@ textarea {
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
 .header__logo-item {
   color: #2196F3;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .menu-open-btn, .menu-close-btn {
@@ -416,17 +429,24 @@ textarea {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
   margin-top: auto;
   margin-bottom: auto;
 }
+@media screen and (min-width: 1200px) {
+  .header__address-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .header__icons {
   display: block;
+  width: 16px;
   max-height: 80px;
   margin-right: 10px;
   fill: #757575;
@@ -452,15 +472,17 @@ textarea {
 
 .hero {
   max-width: 1600px;
-  min-height: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
   background-color: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-img-mob.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -482,6 +504,9 @@ textarea {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-img-desk.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -531,9 +556,9 @@ textarea {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section__qualities--padding {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
 }
 
@@ -692,7 +717,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .team__item:nth-last-child(n+2) {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -773,11 +798,6 @@ textarea {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) {
-  .reg-cust__list {
-    padding-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .reg-cust__list {
     display: flex;
@@ -796,7 +816,7 @@ textarea {
     margin-bottom: 30px;
   }
   .reg-cust__item:nth-last-child(2n+1) {
-    margin-left: 10px;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -865,6 +885,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .main-footer-addresses {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -948,6 +969,7 @@ textarea {
     text-align: left;
     margin-left: 70px;
     margin-top: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -1218,7 +1240,8 @@ textarea {
   position: relative;
   width: 16px;
   height: 15px;
-  display: inline-block;
+  display: inline-flex;
+  flex-shrink: 0;
   border-radius: 2px;
   border: 2px solid #212121;
 }
@@ -1412,7 +1435,9 @@ textarea {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  padding: 63px 24px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
 }
 .product__link:hover .product__description {
   transform: translateY(0);

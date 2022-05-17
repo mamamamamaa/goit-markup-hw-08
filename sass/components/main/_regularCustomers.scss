@@ -5,10 +5,6 @@
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width:768px) {
-        padding-bottom: 60px;
-    }
-
     @media screen and (min-width:1200px) {
         @include flexPosition();
         flex-wrap: nowrap;
@@ -24,7 +20,7 @@
             margin-bottom: 30px;
         }
         &:nth-last-child(2n+1) {
-            margin-left: 10px;
+            margin-left: 30px;
         }
 
     }
