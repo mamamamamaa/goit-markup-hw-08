@@ -6,7 +6,8 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin-left: auto;   
+    margin-left: auto;  
+    padding: 0; 
 }
 
 .menu-open-btn:hover,
@@ -195,14 +196,12 @@
 .menu__address-link:focus .menu__icons--hover-color {
     fill: $accent-color;
 }
-
-@media screen and (min-width:768px) {
-    .menu__link--visible::after {
-        opacity: 1;
-    }
-
-    .menu__link--visible {
-        color: $accent-color;
-    }
+.menu__link--visible::after {
+    opacity: 1;
 }
+
+.menu__link--visible {
+    color: $accent-color;
+}
+
 

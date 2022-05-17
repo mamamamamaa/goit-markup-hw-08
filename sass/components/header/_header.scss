@@ -3,12 +3,15 @@
 }
 
 .menu__container, .header__container {
-    height: 80px;
+    height: 60px;
     @include flexPosition();    
     padding: 0 15px;
     @media screen and (min-width:480px) {
         margin-right: auto;
         margin-left: auto;
+    }
+    @media screen and (min-width:768px) {
+        height: 80px;
     }
 }
 
